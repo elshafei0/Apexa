@@ -1,15 +1,17 @@
-/* @font-face {
+@font-face {
     font-family:barlow ;
-    src: url(font/Barlow-BoldItalic.ttf);
-} */
+    src: url(font/Barlow-Medium.ttf);
+}
 :root{
     --c-dark:#212529;
+    --c-white:#ffffff;
     --c-brand:#4e57d4;
     --c-brand-light:#6970dd;
     --c-brand-rgb:78,87,212;
     --c-body:#727272;
     --box-shadow:0px 15px 25px rgba(0,0,0,.08);
     --transition:all 250ms ease-out;
+
 }
 body{
     font-family: barlow,"sans-serif";
@@ -100,7 +102,7 @@ z-index: -1;
     color: white;
 }
 #counter{
-    background: linear-gradient(rgba(var(--c-brand-rgb) , .8) , rgba(var(--c-brand-rgb) , .438)) , url(./background.jpg); 
+    background: linear-gradient(rgba(var(--c-brand-rgb) , .8) , rgba(var(--c-brand-rgb) , .438)) , url(../media/backGround/background.jpg); 
     background-position: center;
     background-size: cover;
 
@@ -174,7 +176,7 @@ width: 70px;
     content: "";
     width: 100%;
     height: 70%;
-    background: linear-gradient(rgba(var(--c-brand-rgb) , .8) , rgba(var(--c-brand-rgb) , .438)) , url(./background.jpg); 
+    background: linear-gradient(rgba(var(--c-brand-rgb) , .8) , rgba(var(--c-brand-rgb) , .438)) , url(../media/background/background.jpg); 
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -196,4 +198,22 @@ footer{
     align-items: center;
     justify-content: center;
     display: flex;
+    color: var(--c-white);
+}
+
+.slide_label{
+    position: absolute ;
+    top: 60% !important;
+    left: 50% !important;
+    transform: translate(-50%,-50%) !important;
+    color: var(--c-white) !important;
+    font-size: 1rem !important;
+}
+.slide_label h5{
+    color: var(--c-white) !important;
+    font-size: 4rem !important;
+    width: 100% !important;
+}
+#close{
+    cursor: pointer;
 }
