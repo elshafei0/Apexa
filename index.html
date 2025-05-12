@@ -5,10 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apexa</title>
-    <link rel="shortcut icon" type="x-icon" href="./media/logo.png">
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
     <script src="./js/popper.min.js" defer></script>
     <script src="./js/jquery-3.7.1.js" defer></script>
     <script src="./js/bootstrap.js" defer></script>
@@ -20,12 +18,11 @@
     <nav
         class=" fixed-top justify-content-between pe-3 ps-3 navbar navbar-expand-lg navbar-expand-md bg-light navbar-light">
         <a class="navbar-brand">Apexa</a>
-
         <a href="#ex" data-bs-toggle="collapse" class=" navbar-toggler">
             <span class="navbar-toggler-icon"></span>
         </a>
         <div id="ex" class="collapse navbar-collapse">
-            <ul class="  ms-auto navbar-nav">
+            <ul class=" me-4 ms-auto navbar-nav">
                 <li class="nav-item"><a href="#carouselExample" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
@@ -34,61 +31,68 @@
                 <li class="nav-item"><a href="#team" class="nav-link">Team</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            <!-- Delete Account And Go To Sign In Bage -->
+            <div>
+                <svg id="close" onclick="close_webSite" class="pointer-event" width="30px" height="30px"
+                    viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
+                        stroke-width="0.288"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M6.34315 6.34315C5.22433 7.46197 4.4624 8.88743 4.15372 10.4393C3.84504 11.9911 4.00346 13.5997 4.60896 15.0615C5.21447 16.5233 6.23985 17.7727 7.55544 18.6518C8.87103 19.5308 10.4178 20 12 20C13.5823 20 15.129 19.5308 16.4446 18.6518C17.7602 17.7727 18.7855 16.5233 19.391 15.0615C19.9965 13.5997 20.155 11.9911 19.8463 10.4393C19.5376 8.88743 18.7757 7.46197 17.6569 6.34315"
+                            stroke="#ff0000" stroke-width="2.4" stroke-linecap="round"></path>
+                        <path d="M12 8L12 4" stroke="#ff0000" stroke-width="2.4" stroke-linecap="round"></path>
+                    </g>
+                </svg>
+            </div>
+            <!-- Delete Account And Go To Sign In Bage -->
 
         </div>
     </nav>
 
-    <!-- Carousel -->
-    <div id="carouselExample" class=" mt-5 carousel slide">
-        <ol class="carousel-indicators">
-            <li data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></li>
-            <li data-bs-target="#carouselExample" data-bs-slide-to="1"></li>
-            <li data-bs-target="#carouselExample" data-bs-slide-to="2"></li>
-            <li data-bs-target="#carouselExample" data-bs-slide-to="3"></li>
-            <li data-bs-target="#carouselExample" data-bs-slide-to="4"></li>
-            <li data-bs-target="#carouselExample" data-bs-slide-to="5"></li>
-            <li data-bs-target="#carouselExample" data-bs-slide-to="6"></li>
-            <li data-bs-target="#carouselExample" data-bs-slide-to="7"></li>
-            <li data-bs-target="#carouselExample" data-bs-slide-to="8"></li>
-        </ol>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./media/1.jpg" class="d-block w-100">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./media/Slide/slide_1.webp" class=" blur position-relative w-100">
+                <div class="carousel-caption d-none slide_label d-md-block">
+                    <h5>Chose Your Own Design</h5>
+                    <p>Submit Your Custom Design And We'll Bring It To Life With Precision And Quality.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="./media/Slide/slide_2.jpg" class="d-block w-100">
+                <div class="carousel-caption d-none slide_label d-md-block">
+                    <h5>Front-End Development</h5>
+                    <p>We Craft User-Friendly, Responsive Interfaces That Bring Your Ideas To Life With Style And
+                        Precision.</p>
+
+
+                </div>
             </div>
             <div class="carousel-item">
-                <img src="./media/2.jpg" class="d-block w-100">
-            </div>
-            <div class="carousel-item">
-                <img src="./media/3.jpg" class="d-block w-100">
-            </div>
-            <div class="carousel-item">
-                <img src="./media/4.jpg" class="d-block w-100">
-            </div>
-            <div class="carousel-item">
-                <img src="./media/5.jpg" class="d-block w-100">
-            </div>
-            <div class="carousel-item">
-                <img src="./media/6.jpg" class="d-block w-100">
-            </div>
-            <div class="carousel-item">
-                <img src="./media/7.jpg" class="d-block w-100">
-            </div>
-            <div class="carousel-item">
-                <img src="./media/8.jpg" class="d-block w-100">
-            </div>
-            <div class="carousel-item">
-                <img src="./media/9.jpg" class="d-block w-100">
+                <img src="./media/Slide/slide_3.jpg" class="d-block w-100">
+                <div class="carousel-caption d-none slide_label d-md-block">
+                    <h5>Back-End Development</h5>
+                    <p>We Build Secure And Scalable Backend Systems That Manage Your Data Efficiently, Connect With
+                        Databases Reliably, And Handle Every Request With Precision And Flexibility.</p>
+
+                </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
@@ -104,49 +108,50 @@
                         </h1>
                         <div class="line"></div>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, aspernatur officia.
-                            Animi provident vitae maiores!
+                        <p>We Are A Passionate Team Committed To Providing Exceptional Solutions And Creating Value For
+                            Our Clients Through Innovation And Expertise!</p>
+
                         </p>
                     </div>
                 </div>
             </div>
             <div class="row justify-content-between align-items-center">
                 <div class="col-lg-6">
-                    <img src="./media/33.jpg">
+                    <img class="rounded-3" src="./media/About Us/about_us.png">
                 </div>
                 <div class="col-lg-5 text-center text-lg-start ">
                     <h1>About Apexa</h1>
-                    <p class="mt-3 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione obcaecati
-                        tenetur in quibusdam beatae
-                        corporis!</p>
+                    <p class="mt-3 mb-4">APEXA Is A Leading Innovator In Coding Focused On Delivering
+                        High-Quality Products And Services To Meet The Evolving Needs Of Our Clients.</p>
+
                     <div class="d-flex pt-4 mb-3">
                         <div class="iconbox me-4">
-                            <img src="./media/Assignments.svg">
+                            <img src="./media/svgs/Assignments.svg">
                         </div>
                         <div>
-                            <h5>Lorem, ipsum dolor.
+                            <h5>Founder And CEO
                             </h5>
-                            <p>consectetur adipisicing elit. Ut, nostrum.</p>
+                            <p>Elshafei Mohamed Elgharib.</p>
                         </div>
                     </div>
                     <div class="d-flex mb-3">
                         <div class="iconbox me-4">
-                            <img src="./media/Assignments.svg">
+                            <img src="./media/svgs/Assignments.svg">
                         </div>
                         <div>
-                            <h5>Lorem, ipsum dolor.
+                            <h5>Date Created.
                             </h5>
-                            <p>consectetur adipisicing elit. Ut, nostrum.</p>
+                            <p>May 12, 2025.</p>
                         </div>
                     </div>
                     <div class="d-flex mb-3">
                         <div class="iconbox me-4">
-                            <img src="./media/Assignments.svg">
+                            <img src="./media/svgs/Assignments.svg">
                         </div>
                         <div>
-                            <h5>Lorem, ipsum dolor.
+                            <h5>Goal.
                             </h5>
-                            <p>consectetur adipisicing elit. Ut, nostrum.</p>
+                            <p>Driving Innovation To Achieve Success.</p>
                         </div>
                     </div>
 
@@ -167,10 +172,8 @@
                             Awesome Services
                         </h1>
                         <div class="line"></div>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, aspernatur officia.
-                            Animi provident vitae maiores!
-                        </p>
+                        <p>We Offer Awesome Services That Bring Innovation, Efficiency, And Excellence To Every Project,
+                            Ensuring That Your Vision Becomes A Reality With The Highest Quality Standards.</p>
                     </div>
                 </div>
             </div>
@@ -178,55 +181,45 @@
                 <div class="col-lg-4 col-sm-6">
                     <div class="service theme-shadow p-lg-5 p-4">
                         <div class="iconbox">
-                            <img src="./media/Assignments.svg">
+                            <img src="./media/svgs/Assignments.svg">
                         </div>
-                        <h5 class="mt-4 mb-3">Ux Design</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, autem.</p>
+                        <h5 class="mt-4 mb-3">UI /UX Design</h5>
+                        <p>We Design Intuitive And Engaging User Experiences That Make Your Product Easy To Use And
+                            Visually Compelling Across All Devices.</p>
+
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <div class="service theme-shadow p-lg-5 p-4">
                         <div class="iconbox">
-                            <img src="./media/Assignments.svg">
+                            <img src="./media/svgs/Assignments.svg">
                         </div>
-                        <h5 class="mt-4 mb-3">Ux Design</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, autem.</p>
+                        <h5 class="mt-4 mb-3">Front End Development</h5>
+                        <p>Our Front-End Team Transforms Designs Into Fast, Responsive Interfaces Using The Latest Web
+                            Technologies And Best Practices.</p>
+
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <div class="service theme-shadow p-lg-5 p-4">
                         <div class="iconbox">
-                            <img src="./media/Assignments.svg">
+                            <img src="./media/svgs/Assignments.svg">
                         </div>
-                        <h5 class="mt-4 mb-3">Ux Design</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, autem.</p>
+                        <h5 class="mt-4 mb-3">Back End Development</h5>
+                        <p>From API Development To Complex Logic Handling, Our Back-End Solutions Ensure Your Platform
+                            Runs Smoothly And Securely At Scale.</p>
+
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <div class="service theme-shadow p-lg-5 p-4">
                         <div class="iconbox">
-                            <img src="./media/Assignments.svg">
+                            <img src="./media/svgs/Assignments.svg">
                         </div>
-                        <h5 class="mt-4 mb-3">Ux Design</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, autem.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="service theme-shadow p-lg-5 p-4">
-                        <div class="iconbox">
-                            <img src="./media/Assignments.svg">
-                        </div>
-                        <h5 class="mt-4 mb-3">Ux Design</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, autem.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="service theme-shadow p-lg-5 p-4">
-                        <div class="iconbox">
-                            <img src="./media/Assignments.svg">
-                        </div>
-                        <h5 class="mt-4 mb-3">Ux Design</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, autem.</p>
+                        <h5 class="mt-4 mb-3"> Database Management</h5>
+                        <p>We Structure, Optimize, And Maintain Databases To Ensure Your Data Is Always Organized,
+                            Accessible, And Ready For Growth.</p>
+
                     </div>
                 </div>
             </div>
@@ -268,10 +261,8 @@
                             Our Portofolio
                         </h1>
                         <div class="line"></div>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, aspernatur officia.
-                            Animi provident vitae maiores!
-                        </p>
+                        <p>Our Portfolio Showcases A Wide Range Of Successful Projects That Reflect Our Commitment To
+                            Quality, Creativity, And Client Satisfaction.</p>
                     </div>
                 </div>
             </div>
@@ -279,54 +270,54 @@
                 <div class="col-md-4 col-sm-6">
                     <div class="portfolio-item image-zoom">
                         <div class="image-zoom-warpper">
-                            <img src="./media/car1.jpg">
+                            <img src="./media/portfolio/project.png">
                         </div>
-                        <a href="./media/car1.jpg" data-fenybox="gallery" class="iconbox">
-                            <img src="./media/search-alt-2-svgrepo-com.svg">
+                        <a href="./media/portfolio/project.png" data-fenybox="gallery" class="iconbox">
+                            <img src="./media/svgs/search-alt-2-svgrepo-com.svg">
                         </a>
                     </div>
                     <div class="portfolio-item image-zoom mt-4">
                         <div class="image-zoom-warpper">
-                            <img src="./media/car2.jpg">
+                            <img src="./media/portfolio/project.png">
                         </div>
-                        <a href="./media/car2.jpg" data-fenybox="gallery" class="iconbox">
-                            <img src="./media/search-alt-2-svgrepo-com.svg">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="portfolio-item image-zoom mt-4">
-                        <div class="image-zoom-warpper">
-                            <img src="./media/car3.jpg">
-                        </div>
-                        <a href="./media/car3.jpg" data-fenybox="gallery" class="iconbox">
-                            <img src="./media/search-alt-2-svgrepo-com.svg">
-                        </a>
-                    </div>
-                    <div class="portfolio-item image-zoom mt-4">
-                        <div class="image-zoom-warpper">
-                            <img src="./media/car4.jpg">
-                        </div>
-                        <a href="./media/car4.jpg" data-fenybox="gallery" class="iconbox">
-                            <img src="./media/search-alt-2-svgrepo-com.svg">
+                        <a href="./media/portfolio/project.png" data-fenybox="gallery" class="iconbox">
+                            <img src="./media/svgs/search-alt-2-svgrepo-com.svg">
                         </a>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="portfolio-item image-zoom mt-4">
                         <div class="image-zoom-warpper">
-                            <img src="./media/car5.jpg">
+                            <img src="./media/portfolio/project.png">
                         </div>
-                        <a href="./media/car5.jpg" data-fenybox="gallery" class="iconbox">
-                            <img src="./media/search-alt-2-svgrepo-com.svg">
+                        <a href="./media/portfolio/project.png" data-fenybox="gallery" class="iconbox">
+                            <img src="./media/svgs/search-alt-2-svgrepo-com.svg">
                         </a>
                     </div>
                     <div class="portfolio-item image-zoom mt-4">
                         <div class="image-zoom-warpper">
-                            <img src="./media/car6.jpg">
+                            <img src="./media/portfolio/project.png">
                         </div>
-                        <a href="./media/car6.jpg" data-fenybox="gallery" class="iconbox">
-                            <img src="./media/search-alt-2-svgrepo-com.svg">
+                        <a href="./media/portfolio/project.png" data-fenybox="gallery" class="iconbox">
+                            <img src="./media/svgs/search-alt-2-svgrepo-com.svg">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="portfolio-item image-zoom mt-4">
+                        <div class="image-zoom-warpper">
+                            <img src="./media/portfolio/project.png">
+                        </div>
+                        <a href="./media/portfolio/project.png" data-fenybox="gallery" class="iconbox">
+                            <img src="./media/svgs/search-alt-2-svgrepo-com.svg">
+                        </a>
+                    </div>
+                    <div class="portfolio-item image-zoom mt-4">
+                        <div class="image-zoom-warpper">
+                            <img src="./media/portfolio/project.png">
+                        </div>
+                        <a href="./media/portfolio/project.png" data-fenybox="gallery" class="iconbox">
+                            <img src="./media/svgs/search-alt-2-svgrepo-com.svg">
                         </a>
                     </div>
                 </div>
@@ -345,10 +336,8 @@
                             Testimonials
                         </h1>
                         <div class="line"></div>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, aspernatur officia.
-                            Animi provident vitae maiores!
-                        </p>
+                        <p>Our Testimonials Reflect The Trust And Satisfaction Of Clients Who Have Experienced The
+                            Quality And Impact Of Our Work Firsthand.</p>
                     </div>
                 </div>
             </div>
@@ -357,17 +346,17 @@
                     <div class="review">
                         <div class="review-head bg-white theme-shadow p-4">
                             <div class="stars">
-                                <img width="30px" src="./media/star-svgrepo-com.svg" alt="">
-                                <img width="30px" src="./media/star-svgrepo-com.svg" alt="">
-                                <img width="30px" src="./media/star-svgrepo-com.svg" alt="">
-                                <img width="30px" src="./media/star-svgrepo-com.svg" alt="">
-                                <img width="30px" src="./media/star-svgrepo-com.svg" alt="">
+                                <img width="30px" src="./media/svgs/star-svgrepo-com.svg" alt="">
+                                <img width="30px" src="./media/svgs/star-svgrepo-com.svg" alt="">
+                                <img width="30px" src="./media/svgs/star-svgrepo-com.svg" alt="">
+                                <img width="30px" src="./media/svgs/star-svgrepo-com.svg" alt="">
+                                <img width="30px" src="./media/svgs/star-svgrepo-com.svg" alt="">
                             </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptate pariatur
-                                distinctio, laborum sed hic!</p>
+                            <p>Working With This Team Was A Great Experience — They Understood Our Needs Perfectly And
+                                Delivered Beyond Expectations!</p>
                         </div>
                         <div class="review-person align-items-center mt-4">
-                            <img src="./media/creator_img.png">
+                            <img src="./media/comments/creator_img.png">
                             <div class="ms-3">
                                 <h5>Dianne Russel</h5>
                                 <small>UX Architect</small>
@@ -379,17 +368,17 @@
                     <div class="review">
                         <div class="review-head bg-white theme-shadow p-4">
                             <div class="stars">
-                                <img width="30px" src="./media/star-svgrepo-com.svg" alt="">
-                                <img width="30px" src="./media/star-svgrepo-com.svg" alt="">
-                                <img width="30px" src="./media/star-svgrepo-com.svg" alt="">
-                                <img width="30px" src="./media/star-svgrepo-com.svg" alt="">
-                                <img width="30px" src="./media/star-svgrepo-com.svg" alt="">
+                                <img width="30px" src="./media/svgs/star-svgrepo-com.svg" alt="">
+                                <img width="30px" src="./media/svgs/star-svgrepo-com.svg" alt="">
+                                <img width="30px" src="./media/svgs/star-svgrepo-com.svg" alt="">
+                                <img width="30px" src="./media/svgs/star-svgrepo-com.svg" alt="">
+                                <img width="30px" src="./media/svgs/star-svgrepo-com.svg" alt="">
                             </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptate pariatur
-                                distinctio, laborum sed hic!</p>
+                            <p>Working With This Team Was A Great Experience — They Understood Our Needs Perfectly And
+                                Delivered Beyond Expectations!</p>
                         </div>
                         <div class="review-person align-items-center mt-4">
-                            <img src="./media/creator_img.png">
+                            <img src="./media/comments/creator_img.png">
                             <div class="ms-3">
                                 <h5>Dianne Russel</h5>
                                 <small>UX Architect</small>
@@ -401,17 +390,17 @@
                     <div class="review">
                         <div class="review-head bg-white theme-shadow p-4">
                             <div class="stars">
-                                <img width="30px" src="./media/star-svgrepo-com.svg" alt="">
-                                <img width="30px" src="./media/star-svgrepo-com.svg" alt="">
-                                <img width="30px" src="./media/star-svgrepo-com.svg" alt="">
-                                <img width="30px" src="./media/star-svgrepo-com.svg" alt="">
-                                <img width="30px" src="./media/star-svgrepo-com.svg" alt="">
+                                <img width="30px" src="./media/svgs/star-svgrepo-com.svg" alt="">
+                                <img width="30px" src="./media/svgs/star-svgrepo-com.svg" alt="">
+                                <img width="30px" src="./media/svgs/star-svgrepo-com.svg" alt="">
+                                <img width="30px" src="./media/svgs/star-svgrepo-com.svg" alt="">
+                                <img width="30px" src="./media/svgs/star-svgrepo-com.svg" alt="">
                             </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptate pariatur
-                                distinctio, laborum sed hic!</p>
+                            <p>Working With This Team Was A Great Experience — They Understood Our Needs Perfectly And
+                                Delivered Beyond Expectations!</p>
                         </div>
                         <div class="review-person align-items-center mt-4">
-                            <img src="./media/creator_img.png">
+                            <img src="./media/comments/creator_img.png">
                             <div class="ms-3">
                                 <h5>Dianne Russel</h5>
                                 <small>UX Architect</small>
@@ -423,17 +412,17 @@
                     <div class="review">
                         <div class="review-head bg-white theme-shadow p-4">
                             <div class="stars">
-                                <img width="30px" src="./media/star-svgrepo-com.svg" alt="">
-                                <img width="30px" src="./media/star-svgrepo-com.svg" alt="">
-                                <img width="30px" src="./media/star-svgrepo-com.svg" alt="">
-                                <img width="30px" src="./media/star-svgrepo-com.svg" alt="">
-                                <img width="30px" src="./media/star-svgrepo-com.svg" alt="">
+                                <img width="30px" src="./media/svgs/star-svgrepo-com.svg" alt="">
+                                <img width="30px" src="./media/svgs/star-svgrepo-com.svg" alt="">
+                                <img width="30px" src="./media/svgs/star-svgrepo-com.svg" alt="">
+                                <img width="30px" src="./media/svgs/star-svgrepo-com.svg" alt="">
+                                <img width="30px" src="./media/svgs/star-svgrepo-com.svg" alt="">
                             </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptate pariatur
-                                distinctio, laborum sed hic!</p>
+                            <p>Working With This Team Was A Great Experience — They Understood Our Needs Perfectly And
+                                Delivered Beyond Expectations!</p>
                         </div>
                         <div class="review-person align-items-center mt-4">
-                            <img src="./media/creator_img.png">
+                            <img src="./media/comments/creator_img.png">
                             <div class="ms-3">
                                 <h5>Dianne Russel</h5>
                                 <small>UX Architect</small>
@@ -445,17 +434,17 @@
                     <div class="review">
                         <div class="review-head bg-white theme-shadow p-4">
                             <div class="stars">
-                                <img width="30px" src="./media/star-svgrepo-com.svg" alt="">
-                                <img width="30px" src="./media/star-svgrepo-com.svg" alt="">
-                                <img width="30px" src="./media/star-svgrepo-com.svg" alt="">
-                                <img width="30px" src="./media/star-svgrepo-com.svg" alt="">
-                                <img width="30px" src="./media/star-svgrepo-com.svg" alt="">
+                                <img width="30px" src="./media/svgs/star-svgrepo-com.svg" alt="">
+                                <img width="30px" src="./media/svgs/star-svgrepo-com.svg" alt="">
+                                <img width="30px" src="./media/svgs/star-svgrepo-com.svg" alt="">
+                                <img width="30px" src="./media/svgs/star-svgrepo-com.svg" alt="">
+                                <img width="30px" src="./media/svgs/star-svgrepo-com.svg" alt="">
                             </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptate pariatur
-                                distinctio, laborum sed hic!</p>
+                            <p>Working With This Team Was A Great Experience — They Understood Our Needs Perfectly And
+                                Delivered Beyond Expectations!</p>
                         </div>
                         <div class="review-person align-items-center mt-4">
-                            <img src="./media/creator_img.png">
+                            <img src="./media/comments/creator_img.png">
                             <div class="ms-3">
                                 <h5>Dianne Russel</h5>
                                 <small>UX Architect</small>
@@ -467,17 +456,17 @@
                     <div class="review">
                         <div class="review-head bg-white theme-shadow p-4">
                             <div class="stars">
-                                <img width="30px" src="./media/star-svgrepo-com.svg" alt="">
-                                <img width="30px" src="./media/star-svgrepo-com.svg" alt="">
-                                <img width="30px" src="./media/star-svgrepo-com.svg" alt="">
-                                <img width="30px" src="./media/star-svgrepo-com.svg" alt="">
-                                <img width="30px" src="./media/star-svgrepo-com.svg" alt="">
+                                <img width="30px" src="./media/svgs/star-svgrepo-com.svg" alt="">
+                                <img width="30px" src="./media/svgs/star-svgrepo-com.svg" alt="">
+                                <img width="30px" src="./media/svgs/star-svgrepo-com.svg" alt="">
+                                <img width="30px" src="./media/svgs/star-svgrepo-com.svg" alt="">
+                                <img width="30px" src="./media/svgs/star-svgrepo-com.svg" alt="">
                             </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptate pariatur
-                                distinctio, laborum sed hic!</p>
+                            <p>Working With This Team Was A Great Experience — They Understood Our Needs Perfectly And
+                                Delivered Beyond Expectations!</p>
                         </div>
                         <div class="review-person align-items-center mt-4">
-                            <img src="./media/creator_img.png">
+                            <img src="./media/comments/creator_img.png">
                             <div class="ms-3">
                                 <h5>Dianne Russel</h5>
                                 <small>UX Architect</small>
@@ -486,6 +475,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
@@ -500,10 +490,8 @@
                             Team Group
                         </h1>
                         <div class="line"></div>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, aspernatur officia.
-                            Animi provident vitae maiores!
-                        </p>
+                        <p>Our Team Combines Diverse Skills And Experiences To Collaborate, Innovate, And Deliver
+                            Outstanding Results Together.</p>
                     </div>
                 </div>
             </div>
@@ -511,33 +499,44 @@
                 <div class="col-md-4">
                     <div class="team-member image-zoom">
                         <div class="image-zoom-warpper">
-                            <img src="./media/person1.jpg">
+                            <img src="./media/team/person1.jpg">
                         </div>
                         <div class="team-member-content">
-                            <h4 class="text-white">John</h4>
-                            <p class="mb-0 text-white"> Front End Devoloper</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="team-member image-zoom">
-                        <div class="image-zoom-warpper">
-                            <img src="./media/person2.jpg">
-                        </div>
-                        <div class="team-member-content">
-                            <h4 class="text-white">Ahmed</h4>
-                            <p class="mb-0 text-white"> UI/UX Devoloper</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="team-member image-zoom">
-                        <div class="image-zoom-warpper">
-                            <img src="./media/person3.jpg">
-                        </div>
-                        <div class="team-member-content">
-                            <h4 class="text-white">Mohamed</h4>
+                            <h4 class="text-white">JOHN</h4>
                             <p class="mb-0 text-white"> Back End Devoloper </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member image-zoom">
+                        <div class="image-zoom-warpper">
+                            <img src="./media/team/person2.jpg">
+                        </div>
+                        <div class="team-member-content">
+                            <h4 class="text-white">AHMED</h4>
+                            <p class="mb-0 text-white"> UI/Ux Designer </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member image-zoom">
+                        <div class="image-zoom-warpper">
+                            <img src="./media/team/person3.jpg">
+                        </div>
+                        <div class="team-member-content">
+                            <h4 class="text-white">MOHAMED</h4>
+                            <p class="mb-0 text-white"> Front End Devoloper </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member image-zoom">
+                        <div class="image-zoom-warpper">
+                            <img src="./media/team/person4.jpeg">
+                        </div>
+                        <div class="team-member-content">
+                            <h4 class="text-white">HABIBA</h4>
+                            <p class="mb-0 text-white"> Data Base Manager </p>
                         </div>
                     </div>
                 </div>
@@ -556,10 +555,8 @@
                             Get In Touch
                         </h1>
                         <div class="line"></div>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, aspernatur officia.
-                            Animi provident vitae maiores!
-                        </p>
+                        <p>Have A Question Or A Project In Mind? Get In Touch With Us — We're Here To Help!</p>
+
                     </div>
                 </div>
             </div>
